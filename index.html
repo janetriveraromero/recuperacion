@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <h4>Ingresa numero 1: </h4>
+        <input type="number" id="numero2"> <br><br>
+        <h4>Ingrese el numero 2: </h4>
+        <input type="number" id="numero1"> <br><br>
+        <input type="button" value="sumar" id="btnSumar">
+        <input type="button" value="multiplicar" id="btnMultiplicar">
+        <input type="button" value="restar" id="btnRestar">
+    </form>
+
+    <script>
+        //llamar elemento del html
+
+        let btnSumar = document.getElementById("btnSumar")
+
+        btnSumar.addEventListener('click', () => {
+            let numero1 = document.getElementById("numero1").value
+            let numero2 = document.getElementById("numero2").value
+            console.log(numero1);
+            console.log(numero2);
+
+
+            let resultado = parseInt(numero1) + parseInt(numero2)
+            alert("El total es" + resultado);
+
+        })
+
+        let btnMultiplicar = document.getElementById("btnMultiplicar")
+
+        btnMultiplicar.addEventListener('click', () => {
+            let numero1 = document.getElementById("numero1").value
+            let numero2 = document.getElementById("numero2").value
+            console.log(numero1);
+            console.log(numero2);
+
+
+            let resultadoM = parseInt(numero1) * parseInt(numero2)
+            alert("El total es " + resultadoM);
+
+        })
+
+        let btnRestar= document.getElementById("btnRestar")
+
+            btnRestar.addEventListener('click', () => {
+            let numero1 = document.getElementById("numero1").value
+            let numero2 = document.getElementById("numero2").value
+            console.log(numero1);
+            console.log(numero2);
+
+
+            let resultadoR = parseInt(numero1) - parseInt(numero2)
+            alert("El total es " + resultadoR);
+
+        })
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
